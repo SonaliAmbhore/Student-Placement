@@ -26,9 +26,9 @@ def placement():
         result = model.predict(np.array([cgpa,iq,profile_score]).reshape(1,3))
         # print(f"{result=}")
         if result[0] == 1:
-            result = "Student Placed"
+            result = "Student is Placed"
         else:
-            result ="Not Placed"
+            result ="Student is Not Placed"
 
            
 
